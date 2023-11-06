@@ -37,9 +37,24 @@ module.exports = {
                     if (error) {
                         rejeitado(error)
                         return
-                    } 
+                    }
                     aceito(result.insertCodigo)
                 })
+        })
+    },
+
+    alterar: (id, modelo, placa) => {
+        return new Promise((aceito, rejeitado) => {
+            db.query('UPDATE carros SET modelo = ?, placa = ? WHERE id = ?',
+                [modelo, placa, id],
+                (error, result) => {
+                    if (error) {
+                        rejeitado(error)
+                        return
+                    }
+                    aceito(result.insertCodigo)
+                }
+            )
         })
     }
 }
