@@ -35,7 +35,7 @@ module.exports = {
         res.json(json)
     },
 
-    inserir: async(req, res)=> {
+    inserir: async (req, res) => {
         let json = {
             error: '',
             result: {}
@@ -58,13 +58,13 @@ module.exports = {
         res.json(json)
     },
 
-    alterar: async (req, res)=>{
+    alterar: async (req, res) => {
         let json = {
             error: '',
             result: {}
         }
 
-        let id =  req.params.codigo
+        let id = req.params.codigo
         let modelo = req.body.modelo
         let placa = req.body.placa
 
@@ -78,6 +78,17 @@ module.exports = {
         } else {
             json.error = 'Campos não enviados'
         }
+
+        res.json(json)
+    },
+
+    excluir: async (req, res) => {
+        let json = {
+            error: '',
+            result: {}
+        }
+     
+        await CarroService.excluir(req.params.codigo)
 
         res.json(json)
     }
