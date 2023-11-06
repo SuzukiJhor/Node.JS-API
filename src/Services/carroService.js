@@ -27,5 +27,19 @@ module.exports = {
 
             })
         })
+    },
+
+    inserir: (modelo, placa) => {
+        return new Promise((aceito, rejeitado) => {
+            db.query('INSERT INTO carros (modelo, placa) VALUES (?, ?)',
+                [modelo, placa],
+                (error, result) => {
+                    if (error) {
+                        rejeitado(error)
+                        return
+                    } 
+                    aceito(result.insertCodigo)
+                })
+        })
     }
 }

@@ -11,7 +11,7 @@ module.exports = {
 
         for (let i in carros) {
             json.result.push({
-                codigo: carros[i].codigo,
+                codigo: carros[i].id,
                 descricao: carros[i].modelo
             })
         }
@@ -30,6 +30,31 @@ module.exports = {
 
         if (carro) {
             json.result = carro
+        }
+
+        res.json(json)
+    },
+
+    inserir: async(req, res)=> {
+        let json = {
+            error: '',
+            result: {}
+        }
+
+        let modelo = req.body.modelo
+        let placa = req.body.placa
+
+        console.log(req.body)
+
+        if (modelo && placa) {
+            let id = await CarroService.inserir(modelo, placa)
+            json.result = {
+                id: id,
+                modelo,
+                placa
+            }
+        } else {
+            json.error = 'Campos não enviados'
         }
 
         res.json(json)
