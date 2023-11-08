@@ -57,7 +57,7 @@ Api desenvolvida em Node.js utilizando Mysql como banco de dados!;
   
 <br /> 
 
-### 🎯 REGISTRA OS DADOS DE UM CARRO NO BANCO DE DADOS.
+### 🎯 INSERÇÃO DOS DADOS DE UM CARRO NO BANCO DE DADOS.
   
 ### ```POST``` 
 
