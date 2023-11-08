@@ -79,7 +79,7 @@ http://localhost:3000/api/carro
 
 ### 🎯 ALTERAR DADOS DE UM CARRO ATRAVÉS DO ID.
   
-### ```GET``` 
+### ```PUT``` 
 ```URL
  http://localhost:3333/tasks/id
  
