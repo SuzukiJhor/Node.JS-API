@@ -7,7 +7,7 @@ Api desenvolvida em Node.js utilizando Mysql como banco de dados!;
 
 
 
-### ***⠀⠀⠀⠀⭐ Api desenvolvida em Node.js utilizando Mysql como banco de dados!; ***
+### ⠀⭐ Api desenvolvida em Node.js utilizando Mysql como banco de dados!; 
 
   
 ### 🎯 PEGAR TODOS OS DADOS DE TODOS OS CARROS.
