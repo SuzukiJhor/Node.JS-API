@@ -77,6 +77,38 @@ http://localhost:3000/api/carro
 
 <br /> 
 
+### 🎯 ALTERAR DADOS DE UM CARRO ATRAVÉS DO ID.
+  
+### ```GET``` 
+```URL
+ http://localhost:3333/tasks/id
+ 
+```
+
+### ```Payload``` 
+```body
+{
+    "modelo": "Honda Fit alterado",
+    "placa": "GJG3535 alterado"
+}
+ 
+```
+
+
+```JSON
+{
+    
+    "error": "",
+    "result": {
+        "id": "1",
+        "modelo": "Honda Fit alterado",
+        "placa": "GJG3535 alterado"
+    }
+}
+```
+  
+<br /> 
+
 
 <br/>
 
