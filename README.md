@@ -66,11 +66,22 @@ Api desenvolvida em Node.js utilizando Mysql como banco de dados!;
 http://localhost:3000/api/carro
 
 ```
+
+### ```Payload``` 
+```body
+{
+     "modelo": "Honda Fit",
+    "placa": "GJG3535"
+}
+ 
+```
   
 ```JSON
 {
-    "modelo": "Honda Fit",
-    "placa": "GJG3535"
+   "error": "",
+    "result": {
+        "Dados inseridos com sucesso"
+    }
 }
 
 ```
@@ -81,7 +92,7 @@ http://localhost:3000/api/carro
   
 ### ```PUT``` 
 ```URL
- http://localhost:3333/tasks/id
+ http://localhost:3000/api/carro/id
  
 ```
 
@@ -103,6 +114,24 @@ http://localhost:3000/api/carro
         "id": "1",
         "modelo": "Honda Fit alterado",
         "placa": "GJG3535 alterado"
+    }
+}
+```
+
+### 🎯 DELETAR UM CARRO ATRAVÉS DO ID.
+
+### ```DELETE``` 
+```URL
+ http://localhost:3000/api/carro/id
+ 
+```
+
+```JSON
+{
+    
+    "error": "",
+    "result": {
+        "Dados deletados com sucesso!"
     }
 }
 ```
