@@ -140,16 +140,11 @@ http://localhost:3000/api/carro
 
 <br/>
 
-<a id="Dependências"></a>
-## 🧪 Dependências
-> Requisitos para rotar o codigo...
-
-<br/>
-
 ## `📖 Instalação` 
-  
-  
- <br /> 
+
+  <a id="Dependências"></a>
+## 🧪 Dependências
+> Requisitos para rotar o codigo..
 
  ###  💻 PRÉ-REQUISITOS
 
