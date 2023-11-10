@@ -9,7 +9,6 @@ Api desenvolvida em Node.js utilizando Mysql como banco de dados!;
 
 ### ⠀⭐ Api desenvolvida em Node.js utilizando Mysql como banco de dados!; 
 
-  
 ### 🎯 PEGAR TODOS OS DADOS DE TODOS OS CARROS.
   
 ### ```GET``` 
@@ -152,6 +151,16 @@ http://localhost:3000/api/carro
   
  <br /> 
 
+ ###  💻 PRÉ-REQUISITOS
+
+> Antes de começar, você precisa ter o seguinte instalado em seu ambiente de desenvolvimento:
+
+- Node.js
+- npm (gerenciador de pacotes do Node.js)
+- MySQL Server
+
+  
+
 > Caso tenha Git basta da git clone, caso não tenha baixe o projeto completo em dowlon
 
 ```BASH
@@ -165,6 +174,18 @@ git clone https://github.com/SuzukiJhor/Node.JS-API.git
 ```BASH
 npm i 
 ```
+
+## > Para usar o Mysql utilizando variáveis de ambiente
+
+> Crie um arquivo .env na raiz do projeto e configure as variáveis de ambiente:
+
+```
+DB_HOST=seu-host
+DB_USER=seu-usuario
+DB_PASSWORD=sua-senha
+DB_DATABASE=seu-banco-de-dados
+
+``` 
 
 <br /> 
 
